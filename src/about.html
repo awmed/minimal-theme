@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,14 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="css/main.min.css" rel="stylesheet">
     <link rel="icon" type="image/ico" href="favicon.ico">
-    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous"> -->
   </head>
-
-  <body>
+  <div class="spinner"></div>
+  <body onload="myLoad()">
     <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -42,72 +38,75 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
-    <!-- Title -->
-    <div class="title-bar">
-        <div class="container">
-            <h1>About Us</h1>
+    <div class="hidden">
+        <!-- Title -->
+        <div class="title-bar">
+            <div class="container">
+                <h1>About Us</h1>
+            </div>
         </div>
-    </div>
-    <!-- Title End -->
-    <!-- Main -->
-    <div class="main">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-tile">Who We Are</h4>
-                        </div>
-                        <div class="panel-body">
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate assumenda, laboriosam praesentium id officia unde vel est quaerat hic, omnis nihil ipsam porro distinctio? Ut facere deleniti inventore! Facilis praesentium voluptatum perferendis nostrum atque quibusdam, corrupti neque quasi? Sapiente rerum nulla eaque aspernatur adipisci minima. Possimus amet dolor ex fugit libero modi error! Porro rerum veritatis hic, blanditiis velit nemo.</p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate assumenda, laboriosam praesentium id officia unde vel est quaerat hic, omnis nihil ipsam porro distinctio? Ut facere deleniti inventore! Facilis praesentium voluptatum perferendis nostrum atque quibusdam, corrupti neque quasi? Sapiente rerum nulla eaque aspernatur adipisci minima. Possimus amet dolor ex fugit libero modi error! Porro rerum veritatis hic, blanditiis velit nemo.</p>
+        <!-- Title End -->
+        <!-- Main -->
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-tile">Who We Are</h4>
+                            </div>
+                            <div class="panel-body">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate assumenda, laboriosam praesentium id officia unde vel est quaerat hic, omnis nihil ipsam porro distinctio? Ut facere deleniti inventore! Facilis praesentium voluptatum perferendis nostrum atque quibusdam, corrupti neque quasi? Sapiente rerum nulla eaque aspernatur adipisci minima. Possimus amet dolor ex fugit libero modi error! Porro rerum veritatis hic, blanditiis velit nemo.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate assumenda, laboriosam praesentium id officia unde vel est quaerat hic, omnis nihil ipsam porro distinctio? Ut facere deleniti inventore! Facilis praesentium voluptatum perferendis nostrum atque quibusdam, corrupti neque quasi? Sapiente rerum nulla eaque aspernatur adipisci minima. Possimus amet dolor ex fugit libero modi error! Porro rerum veritatis hic, blanditiis velit nemo.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item active">
-                            Cras justo odio
-                        </a>
-                        <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
-                        <a href="#" class="list-group-item">Morbi leo risus</a>
-                        <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                        <a href="#" class="list-group-item">Vestibulum at eros</a>
+                    <div class="col-md-4">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">
+                                Cras justo odio
+                            </a>
+                            <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
+                            <a href="#" class="list-group-item">Morbi leo risus</a>
+                            <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                            <a href="#" class="list-group-item">Vestibulum at eros</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Main -->
-    <!-- Newsletter -->
-    <div class="section-c">
-        <div class="container">
-            <div class="row">
-                <!-- offset 2 to move center 2 + 8 + 2 -->
-                <div class="col-md-8 col-md-offset-2"> 
-                    <h2>Subscribe To Our Newsletter</h2>
-                    <br>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam dolor nisi, a fuga dolores adipisci consectetur rem inventore nostrum soluta nam debitis odit sunt harum?</p>
-                    <hr>
-                    <form action="">
-                        <input type="text" class="form-control input-lg" placeholder="Enter Email">
+        <!-- End Main -->
+        <!-- Newsletter -->
+        <div class="section-c">
+            <div class="container">
+                <div class="row">
+                    <!-- offset 2 to move center 2 + 8 + 2 -->
+                    <div class="col-md-8 col-md-offset-2"> 
+                        <h2>Subscribe To Our Newsletter</h2>
                         <br>
-                        <button class="btn btn-primary btn-lg btn-block">Subscribe</button>
-                    </form>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam dolor nisi, a fuga dolores adipisci consectetur rem inventore nostrum soluta nam debitis odit sunt harum?</p>
+                        <hr>
+                        <form action="">
+                            <input type="text" class="form-control input-lg" placeholder="Enter Email">
+                            <br>
+                            <button class="btn btn-primary btn-lg btn-block">Subscribe</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- Newsletter -->
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>Copyrights &copy; 2018 Ahmed Safeek</p>
+            </div>
+        </footer>
+        <!-- Footer End -->
     </div>
-    <!-- Newsletter -->
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>Copyrights &copy; 2018 Ahmed Safeek</p>
-        </div>
-    </footer>
-    <!-- Footer End -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- bootstrap js for responsive menu slider and more -->
+    <script src="js/main.min.js"></script>
   </body>
 </html>

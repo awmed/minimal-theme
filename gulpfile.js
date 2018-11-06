@@ -47,7 +47,9 @@ gulp.task('copyPHP', function(){
 //copy fonts
 gulp.task('fonts', function(){
     gulp.src('src/bower_components/font-awesome/fonts/**.*')
-    .pipe(gulp.dest('dist/fonts'))
+    .pipe(gulp.dest('dist/fonts'));
+    gulp.src('src/favicon.ico')
+    .pipe(gulp.dest('dist/'));
 });
 
 //copy + minify html
@@ -90,8 +92,8 @@ gulp.task('sass', function(){
 // concat and minify js
 gulp.task('scripts', function(){
     gulp.src('src/js/*.js')
-        .pipe(concat('main.js'))
-        .pipe(uglify())
+        // .pipe(concat('main.js'))
+        // .pipe(uglify())
         .pipe(rename({ suffix: '.min'}))
         .pipe(gulp.dest('dist/js'));
 
